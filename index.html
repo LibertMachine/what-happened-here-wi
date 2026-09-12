@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>What Happened Here? | Wisconsin</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="app-header">
+    <div class="brand">
+      <p class="eyebrow">WISCONSIN HISTORY</p>
+      <h1>What Happened Here?</h1>
+      <p class="tagline">There’s a story under your feet.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="controls">
+
+      <button id="locationBtn" class="primary-btn">
+        Use My Location
+      </button>
+
+      <div class="radius-controls">
+        <button class="radius-btn active" data-radius="1">
+          1 Mile
+        </button>
+
+        <button class="radius-btn" data-radius="5">
+          5 Miles
+        </button>
+
+        <button class="radius-btn" data-radius="20">
+          20 Miles
+        </button>
+      </div>
+
+      <div class="category-controls">
+  <button class="category-btn active" data-category="All">
+    All
+  </button>
+
+  <button class="category-btn" data-category="Disaster">
+    Disaster
+  </button>
+
+  <button class="category-btn" data-category="Industry">
+    Industry
+  </button>
+
+  <button class="category-btn" data-category="Local History">
+    Local History
+  </button>
+
+  <button class="category-btn" data-category="Early History">
+    Early History
+  </button>
+</div>
+
+    </section>
+
+    <section class="map-section">
+      <div id="map"></div>
+    </section>
+
+    <section class="story-controls">
+      <button id="surpriseBtn" class="surprise-btn">
+        🎲 Tell Me Something
+      </button>
+    </section>
+
+    <section id="storyCard" class="story-card hidden">
+      <p id="storyCategory" class="story-category"></p>
+
+      <h2 id="storyTitle"></h2>
+
+      <div class="story-meta">
+        <span id="storyYear"></span>
+        <span id="storyDistance"></span>
+      </div>
+
+      <p id="storySummary"></p>
+
+      <p class="story-source">
+  Source:
+  <span id="storySource"></span>
+</p>
+
+<a
+  id="storySourceLink"
+  class="story-source-link"
+  href="#"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View Historical Source →
+</a>
+    </section>
+
+  </main>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+[
+  {
+    "title": "The Whiting Paper Mill Explosion",
+    "year": "1888",
+    "category": "Disaster",
+    "lat": 44.2033,
+    "lng": -88.4484,
+    "locationAccuracy": "exact",
+    "summary": "In 1888, the George A. Whiting Paper Company mill in Menasha exploded and burned. The disaster destroyed the mill, and the operation was rebuilt at the site.",
+    "source": "Wisconsin Historical Society — George A. Whiting Paper Company",
+    "sourceUrl": "https://legacy.wisconsinhistory.org/Records/Property/HI61052"
+  },
+  {
+    "title": "Menasha Wooden Ware Became an Industrial Giant",
+    "year": "1875",
+    "category": "Industry",
+    "lat": 44.2056,
+    "lng": -88.4439,
+    "locationAccuracy": "approximate",
+    "summary": "The Menasha Wooden Ware Company grew from an earlier pail-making business into a nationally important manufacturer of tubs, pails, barrels, broom handles, clothespins and other wooden products. By the early twentieth century, its Menasha operations covered dozens of buildings.",
+    "source": "Wisconsin Labor History — Menasha Corporation historical bibliography",
+    "sourceUrl": "https://www.wisconsinlaborhistory.org/wisconsin-labor-history-bibliography/references-for-wisconsin-labor-history-bibliography/"
+  },
+  {
+    "title": "A Massive Fire Changed Menasha Wooden Ware",
+    "year": "1964",
+    "category": "Disaster",
+    "lat": 44.2056,
+    "lng": -88.4439,
+    "locationAccuracy": "approximate",
+    "summary": "A major fire on July 17, 1964 destroyed the longtime Menasha headquarters plant of the Menasha Wooden Ware Corporation. The company later relocated its main operations to nearby Neenah.",
+    "source": "Wisconsin Labor History — Menasha Corporation historical bibliography",
+    "sourceUrl": "https://www.wisconsinlaborhistory.org/wisconsin-labor-history-bibliography/references-for-wisconsin-labor-history-bibliography/"
+  },
+  {
+    "title": "The Hill of the Dead",
+    "year": "Historic",
+    "category": "Early History",
+    "lat": 44.222,
+    "lng": -88.449,
+    "locationAccuracy": "approximate",
+    "summary": "Near Little Lake Butte des Morts stood a mound remembered as the Hill of the Dead. The place became associated with conflict involving the Meskwaki, or Fox, people and French forces in the eighteenth century.",
+    "source": "Wisconsin Historical Society — Hill of the Dead in Butte des Morts",
+    "sourceUrl": "https://www.wisconsinhistory.org/record/image/W013QVL"
+  },
+  {
+    "title": "A Fox Village Once Stood Near Here",
+    "year": "1700s",
+    "category": "Early History",
+    "lat": 44.221,
+    "lng": -88.447,
+    "locationAccuracy": "approximate",
+    "summary": "Historical maps and later surveys document a Meskwaki, or Fox, settlement in the Butte des Morts area. French military expeditions moved through this region during conflicts with the Fox people in the early eighteenth century.",
+    "source": "Wisconsin Historical Society — Butte des Morts historical maps",
+    "sourceUrl": "https://legacy.wisconsinhistory.org/Records?facets=CATEGORIES%3A%22Wisconsin+Historical+Images%22%2CCREATOR_NAME%3A%22Lawson%2C+Publius+Virgilius%2C+1853-1920%22"
+  },
+  {
+    "title": "Neenah Was Once Known as Winnebago Rapids",
+    "year": "1800s",
+    "category": "Local History",
+    "lat": 44.1858,
+    "lng": -88.4626,
+    "locationAccuracy": "approximate",
+    "summary": "Before the name Neenah became established, the settlement was known as Winnebago Rapids. Its location on the Fox River helped attract flour mills, lumber businesses and eventually the paper industry.",
+    "source": "Wisconsin Digital Collections — Neenah Local History Collection",
+    "sourceUrl": "https://uwdc.library.wisc.edu/collections/WI/"
+  }
+]
