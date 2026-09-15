@@ -11,7 +11,7 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
 </head>
 
 <body>
@@ -28,51 +28,117 @@
 
     <section class="controls">
 
-      <button id="locationBtn" class="primary-btn">
-        Use My Location
-      </button>
-
-      <div class="radius-controls">
-        <button class="radius-btn active" data-radius="1">
-          1 Mile
-        </button>
-
-        <button class="radius-btn" data-radius="5">
-          5 Miles
-        </button>
-
-        <button class="radius-btn" data-radius="20">
-          20 Miles
-        </button>
-      </div>
-
-      <div class="category-controls">
-  <button class="category-btn active" data-category="All">
-    All
+  <button id="locationBtn" class="primary-btn">
+    Use My Location
   </button>
 
-  <button class="category-btn" data-category="Disaster">
-    Disaster
-  </button>
+  <div class="radius-controls">
 
-  <button class="category-btn" data-category="Industry">
-    Industry
-  </button>
+    <button
+      class="radius-btn"
+      data-radius="1"
+      disabled
+    >
+      1 Mile
+    </button>
 
-  <button class="category-btn" data-category="Local History">
-    Local History
-  </button>
+    <button
+      class="radius-btn"
+      data-radius="5"
+      disabled
+    >
+      5 Miles
+    </button>
 
-  <button class="category-btn" data-category="Early History">
-    Early History
-  </button>
-</div>
+    <button
+      class="radius-btn"
+      data-radius="20"
+      disabled
+    >
+      20 Miles
+    </button>
 
-    </section>
+    <button
+      class="radius-btn active"
+      data-radius="all"
+    >
+      All Wisconsin
+    </button>
+
+  </div>
+
+  <p id="locationHint" class="location-hint">
+    Use your location to explore stories near you.
+  </p>
+
+  <div class="category-controls">
+
+    <button
+      class="category-btn active"
+      data-category="All"
+    >
+      All
+    </button>
+
+    <button
+      class="category-btn"
+      data-category="Disaster"
+    >
+      Disaster
+    </button>
+
+    <button
+      class="category-btn"
+      data-category="Industry"
+    >
+      Industry
+    </button>
+
+    <button
+      class="category-btn"
+      data-category="Local History"
+    >
+      Local History
+    </button>
+
+    <button
+      class="category-btn"
+      data-category="Early History"
+    >
+      Early History
+    </button>
+
+  </div>
+
+  <p id="storyCount" class="story-count">
+    Explore the map to discover Wisconsin history.
+  </p>
+
+</section>
 
     <section class="map-section">
       <div id="map"></div>
     </section>
+
+<section
+  id="closestStory"
+  class="closest-story hidden"
+>
+  <p class="closest-eyebrow">
+    📍 CLOSEST STORY TO YOU
+  </p>
+
+  <h2 id="closestTitle"></h2>
+
+  <p id="closestDistance"></p>
+
+  <button
+    id="closestStoryBtn"
+    class="closest-story-btn"
+  >
+    Show Me →
+  </button>
+</section>
 
     <section class="story-controls">
       <button id="surpriseBtn" class="surprise-btn">
@@ -81,32 +147,55 @@
     </section>
 
     <section id="storyCard" class="story-card hidden">
+
+  <div class="story-card-header">
+
+    <div>
       <p id="storyCategory" class="story-category"></p>
 
       <h2 id="storyTitle"></h2>
+    </div>
 
-      <div class="story-meta">
-        <span id="storyYear"></span>
-        <span id="storyDistance"></span>
-      </div>
+    <button
+      id="storyCloseBtn"
+      class="story-close-btn"
+      aria-label="Close story"
+    >
+      ×
+    </button>
 
-      <p id="storySummary"></p>
+  </div>
 
-      <p class="story-source">
-  Source:
-  <span id="storySource"></span>
-</p>
+  <div class="story-meta">
+  <span id="storyYear"></span>
+  <span id="storyLocation"></span>
+  <span id="storyDistance"></span>
+</div>
 
-<a
-  id="storySourceLink"
-  class="story-source-link"
-  href="#"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  View Historical Source →
-</a>
-    </section>
+  <div class="story-divider"></div>
+
+  <p id="storySummary"></p>
+
+  <div class="story-footer">
+
+    <p class="story-source">
+      <span class="story-source-label">Historical Source</span>
+      <span id="storySource"></span>
+    </p>
+
+    <a
+      id="storySourceLink"
+      class="story-source-link"
+      href="#"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View Source →
+    </a>
+
+  </div>
+
+</section>
 
   </main>
 
@@ -114,7 +203,7 @@
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
   </script>
 
-  <script src="js/app.js"></script>
+  <script src="js/app.js?v=3"></script>
 
 </body>
 </html>

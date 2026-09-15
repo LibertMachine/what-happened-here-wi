@@ -278,7 +278,9 @@ main {
 ========================================= */
 
 .story-card {
-  padding: 24px;
+  position: relative;
+
+  padding: 30px;
 
   border: 1px solid var(--border);
   border-radius: 22px;
@@ -286,8 +288,8 @@ main {
   background:
     linear-gradient(
       145deg,
-      rgba(233, 223, 201, 0.07),
-      rgba(233, 223, 201, 0.02)
+      rgba(233, 223, 201, 0.08),
+      rgba(233, 223, 201, 0.025)
     );
 
   box-shadow: var(--shadow);
@@ -297,8 +299,15 @@ main {
   display: none;
 }
 
+.story-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
 .story-category {
-  margin: 0 0 8px;
+  margin: 0 0 9px;
 
   color: var(--red-light);
 
@@ -311,33 +320,91 @@ main {
   font-weight: 800;
 
   letter-spacing: 0.18em;
-
   text-transform: uppercase;
 }
 
 .story-card h2 {
-  margin: 0 0 12px;
+  max-width: 850px;
+
+  margin: 0;
 
   font-size: clamp(
-    1.7rem,
+    1.8rem,
     4vw,
-    2.7rem
+    2.8rem
   );
+
+  line-height: 1.08;
+}
+
+.story-close-btn {
+  flex-shrink: 0;
+
+  width: 36px;
+  height: 36px;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: var(--muted);
+
+  font-size: 1.35rem;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.story-close-btn:hover {
+  color: var(--paper);
+  transform: scale(1.05);
 }
 
 .story-meta {
   display: flex;
-  gap: 18px;
+  flex-wrap: wrap;
+  gap: 10px;
 
-  margin-bottom: 18px;
+  margin-top: 18px;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.story-meta span:not(:empty) {
+  padding: 6px 10px;
+
+  border: 1px solid var(--border);
+  border-radius: 999px;
 
   color: var(--paper-dark);
 
-  font-size: 0.9rem;
-  font-weight: 700;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.story-divider {
+  width: 48px;
+  height: 2px;
+
+  margin: 24px 0;
+
+  background: var(--red-light);
 }
 
 #storySummary {
+  max-width: 850px;
+
   margin: 0;
 
   color: #ded6c6;
@@ -347,17 +414,28 @@ main {
     Helvetica,
     sans-serif;
 
-  font-size: 0.98rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
 
-  line-height: 1.7;
+.story-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+
+  margin-top: 28px;
+  padding-top: 18px;
+
+  border-top: 1px solid var(--border);
 }
 
 .story-source {
-  margin: 22px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 
-  padding-top: 16px;
-
-  border-top: 1px solid var(--border);
+  margin: 0;
 
   color: var(--muted);
 
@@ -366,7 +444,28 @@ main {
     Helvetica,
     sans-serif;
 
-  font-size: 0.74rem;
+  font-size: 0.76rem;
+}
+
+.story-source-label {
+  color: var(--paper-dark);
+
+  font-size: 0.65rem;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.story-source #storySource {
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--muted);
+
+  font-size: 0.78rem;
+  line-height: 1.5;
 }
 
 /* =========================================
@@ -418,6 +517,21 @@ main {
   .story-card {
     padding: 20px;
   }
+
+  .story-footer {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.story-card h2 {
+  font-size: 1.8rem;
+}
+
+#storySummary {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
 }
 
 .story-source-link {
@@ -490,4 +604,63 @@ main {
   background: var(--paper);
 
   color: #15140f;
+}
+
+.story-count {
+  margin: 14px 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.radius-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.location-hint {
+  margin: 8px 0 0;
+  font-size: 0.82rem;
+  opacity: 0.65;
+}
+
+.closest-story {
+  max-width: 760px;
+  margin: 18px auto;
+  padding: 20px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.closest-story.hidden {
+  display: none;
+}
+
+.closest-eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  opacity: 0.65;
+}
+
+.closest-story h2 {
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+}
+
+#closestDistance {
+  margin: 0 0 14px;
+  opacity: 0.7;
+}
+
+.closest-story-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
 }

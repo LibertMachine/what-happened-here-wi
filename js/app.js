@@ -17,7 +17,9 @@ const eventMarkers = [];
 
 async function loadEvents() {
   try {
-    const response = await fetch("data/events.json");
+    const response = await fetch(
+  `data/events.json?v=${Date.now()}`
+);
 
     if (!response.ok) {
       throw new Error(
@@ -76,6 +78,9 @@ function showStory(event) {
   document.getElementById("storyYear").textContent =
     event.year;
 
+  document.getElementById("storyLocation").textContent =
+  event.location || "";
+
   document.getElementById(
   "storyDistance"
 ).textContent =
@@ -105,12 +110,21 @@ if (event.sourceUrl) {
 document
   .getElementById("surpriseBtn")
   .addEventListener("click", () => {
-    if (events.length === 0) {
+    const visibleEvents = events.filter((event) =>
+      map.hasLayer(event.marker)
+    );
+
+    if (visibleEvents.length === 0) {
+      alert(
+        "No stories match your current filters. Try a larger radius or another category."
+      );
       return;
     }
 
     const randomEvent =
-      events[Math.floor(Math.random() * events.length)];
+      visibleEvents[
+        Math.floor(Math.random() * visibleEvents.length)
+      ];
 
     map.flyTo(
       [randomEvent.lat, randomEvent.lng],
@@ -124,6 +138,8 @@ document
   const locationBtn = document.getElementById("locationBtn");
 
 let userMarker = null;
+let radiusCircle = null;
+
 let userLat = null;
 let userLng = null;
 
@@ -139,6 +155,22 @@ locationBtn.addEventListener("click", () => {
     (position) => {
       userLat = position.coords.latitude;
       userLng = position.coords.longitude;
+
+      updateClosestStory();
+
+      document
+  .querySelectorAll(
+    '.radius-btn:not([data-radius="all"])'
+  )
+  .forEach((button) => {
+    button.disabled = false;
+  });
+
+const locationHint =
+  document.getElementById("locationHint");
+
+locationHint.textContent =
+  "Location enabled — choose how far you want to explore.";
 
       map.flyTo([userLat, userLng], 13, {
         duration: 1.5
@@ -194,9 +226,86 @@ updateVisibleEvents();
   );
 });
 
-let selectedRadius = 1;
+let selectedRadius = "all";
 
 let selectedCategory = "All";
+
+
+const storyCloseBtn =
+  document.getElementById("storyCloseBtn");
+
+storyCloseBtn.addEventListener("click", () => {
+  document
+    .getElementById("storyCard")
+    .classList.add("hidden");
+});
+
+const radiusButtons =
+  document.querySelectorAll(".radius-btn");
+
+radiusButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    radiusButtons.forEach((btn) =>
+      btn.classList.remove("active")
+    );
+
+    button.classList.add("active");
+
+    const radius =
+      button.dataset.radius;
+
+    selectedRadius =
+  radius === "all"
+    ? "all"
+    : Number(radius);
+
+updateVisibleEvents();
+updateClosestStory();
+updateRadiusCircle();
+
+if (
+  radiusCircle &&
+  selectedRadius !== "all"
+) {
+  map.fitBounds(
+    radiusCircle.getBounds(),
+    {
+      padding: [30, 30],
+      animate: true,
+      duration: 0.8
+    }
+  );
+} else if (selectedRadius === "all") {
+  map.flyTo(
+    [44.5, -89.5],
+    7,
+    {
+      duration: 1.2
+    }
+  );
+}
+  });
+});
+
+const categoryButtons =
+  document.querySelectorAll(".category-btn");
+
+categoryButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    categoryButtons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    selectedCategory =
+      button.dataset.category;
+
+    updateVisibleEvents();
+  });
+});
+
+
 
 function milesBetween(lat1, lng1, lat2, lng2) {
   const earthRadiusMiles = 3958.8;
@@ -222,23 +331,121 @@ function milesBetween(lat1, lng1, lat2, lng2) {
   return earthRadiusMiles * c;
 }
 
+function updateRadiusCircle() {
+  if (radiusCircle) {
+    map.removeLayer(radiusCircle);
+    radiusCircle = null;
+  }
+
+  if (
+    userLat === null ||
+    userLng === null ||
+    selectedRadius === "all"
+  ) {
+    return;
+  }
+
+  // Leaflet expects radius in meters.
+  const radiusInMeters =
+    selectedRadius * 1609.344;
+
+  radiusCircle = L.circle(
+    [userLat, userLng],
+    {
+      radius: radiusInMeters,
+      weight: 2,
+      opacity: 0.65,
+      fillOpacity: 0.08,
+      interactive: false
+    }
+  ).addTo(map);
+}
+
+function updateClosestStory() {
+  if (
+    userLat === null ||
+    userLng === null ||
+    events.length === 0
+  ) {
+    return;
+  }
+
+  let closestEvent = null;
+  let closestDistance = Infinity;
+
+  events.forEach((event) => {
+    const distance = milesBetween(
+      userLat,
+      userLng,
+      event.lat,
+      event.lng
+    );
+
+    if (distance < closestDistance) {
+      closestDistance = distance;
+      closestEvent = event;
+    }
+  });
+
+  if (!closestEvent) {
+    return;
+  }
+
+  const closestStory =
+    document.getElementById("closestStory");
+
+  const closestTitle =
+    document.getElementById("closestTitle");
+
+  const closestDistanceText =
+    document.getElementById("closestDistance");
+
+  closestTitle.textContent =
+    closestEvent.title;
+
+  closestDistanceText.textContent =
+    `${closestDistance.toFixed(1)} miles away`;
+
+  closestStory.classList.remove("hidden");
+
+  const closestStoryBtn =
+    document.getElementById("closestStoryBtn");
+
+  closestStoryBtn.onclick = () => {
+    map.flyTo(
+      [closestEvent.lat, closestEvent.lng],
+      15,
+      { duration: 1.5 }
+    );
+
+    showStory(closestEvent);
+  };
+}
+
 function updateVisibleEvents() {
+  let visibleCount = 0;
+
   events.forEach((event) => {
     let withinRadius = true;
 
-    if (userLat !== null && userLng !== null) {
-      const distance = milesBetween(
-        userLat,
-        userLng,
-        event.lat,
-        event.lng
-      );
+    if (
+  userLat !== null &&
+  userLng !== null
+) {
+  const distance = milesBetween(
+    userLat,
+    userLng,
+    event.lat,
+    event.lng
+  );
 
-      event.distance = distance;
+  event.distance = distance;
 
-      withinRadius =
-        distance <= selectedRadius;
-    }
+  if (selectedRadius !== "all") {
+    withinRadius =
+      distance <= selectedRadius;
+  }
+}
 
     const matchesCategory =
       selectedCategory === "All" ||
@@ -248,6 +455,8 @@ function updateVisibleEvents() {
       withinRadius && matchesCategory;
 
     if (shouldShow) {
+      visibleCount++;
+
       if (!map.hasLayer(event.marker)) {
         event.marker.addTo(map);
       }
@@ -257,22 +466,28 @@ function updateVisibleEvents() {
       }
     }
   });
+
+  const storyCount =
+    document.getElementById("storyCount");
+
+  if (userLat !== null && userLng !== null) {
+    if (selectedRadius === "all") {
+      storyCount.textContent =
+        `${visibleCount} ${
+          visibleCount === 1 ? "story" : "stories"
+        } across Wisconsin`;
+    } else {
+      storyCount.textContent =
+        `${visibleCount} ${
+          visibleCount === 1 ? "story" : "stories"
+        } within ${selectedRadius} ${
+          selectedRadius === 1 ? "mile" : "miles"
+        }`;
+    }
+  } else {
+    storyCount.textContent =
+      `${visibleCount} ${
+        visibleCount === 1 ? "story" : "stories"
+      } to explore across Wisconsin`;
+  }
 }
-
-const categoryButtons =
-  document.querySelectorAll(".category-btn");
-
-categoryButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    categoryButtons.forEach((btn) =>
-      btn.classList.remove("active")
-    );
-
-    button.classList.add("active");
-
-    selectedCategory =
-      button.dataset.category;
-
-    updateVisibleEvents();
-  });
-});
