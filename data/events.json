@@ -81,7 +81,10 @@
     "summary": "On October 8, 1871, a firestorm swept through Peshtigo and northeastern Wisconsin. In only hours, entire communities were destroyed and roughly 1,500 people were killed. The catastrophe occurred the same night as the Great Chicago Fire but was far deadlier.",
     "source": "Wisconsin Historical Society — Peshtigo Fire",
     "sourceUrl": "https://legacy.wisconsinhistory.org/Records/Article/CS1750",
-    "location": "Peshtigo, Wisconsin"
+    "location": "Peshtigo, Wisconsin",
+    "image": "images/stories/peshtigo-fire.jpg",
+    "imageAlt": "Historic depiction of the 1871 Peshtigo Fire",
+    "imageCredit": "Wikimedia Commons — Public Domain"
   },
   {
     "title": "The Greatest Show on Earth Started Here",
@@ -93,7 +96,10 @@
     "summary": "The Ringling brothers launched their circus from Baraboo in 1884 as a small wagon show with no menagerie or wild animals. Within decades, their operation had grown into the largest circus empire in the United States.",
     "source": "Wisconsin Historical Society — Ringling Brothers Circus Winter Quarters",
     "sourceUrl": "https://www.wisconsinhistory.org/record/national-register/NR1972/bounded-roughly-by-water-briar-lynn-and-east-sts",
-    "location": "Baraboo, Wisconsin"
+    "location": "Baraboo, Wisconsin",
+    "image": "images/stories/ringling-brothers-baraboo.jpg",
+    "imageAlt": "Historic Ringling Brothers Circus winter quarters in Baraboo, Wisconsin",
+    "imageCredit": "Wisconsin Historical Society"
   },
   {
     "title": "Wisconsin's Capitol Burned to the Ground",
@@ -105,7 +111,10 @@
     "summary": "Early on February 27, 1904, fire broke out inside Wisconsin's State Capitol. Firefighters battled the blaze for about 18 hours, but nearly the entire building was destroyed. Governor Robert La Follette helped rescue government records from the burning structure.",
     "source": "Wisconsin Historical Society — Wisconsin Capitols",
     "sourceUrl": "https://legacy.wisconsinhistory.org/Records/Article/CS2903",
-    "location": "Madison, Wisconsin"
+    "location": "Madison, Wisconsin",
+    "image": "images/stories/wisconsin-capitol-fire.jpg",
+    "imageAlt": "Wisconsin State Capitol after the 1904 fire in Madison",
+    "imageCredit": "Wisconsin Historical Society"
   },
   {
     "title": "Why Wisconsin Is Called the Badger State",
@@ -549,7 +558,10 @@
     "summary": "Architect Frank Lloyd Wright built Taliesin near Spring Green as his home, studio and architectural laboratory in the landscape of the Wisconsin River valley.",
     "source": "Wisconsin Historical Society — State Historical Markers / Wisconsin History",
     "sourceUrl": "https://www.wisconsinhistory.org/connect-with-local-history-outreach/wisconsin-state-historical-markers/",
-    "location": "Spring Green, Wisconsin"
+    "location": "Spring Green, Wisconsin",
+    "image": "images/stories/taliesin-1913.jpg",
+    "imageAlt": "Historic 1913 photograph of Taliesin near Spring Green, Wisconsin",
+    "imageCredit": "Wisconsin Historical Society"
   },
   {
     "title": "The Taliesin Murders",
@@ -741,7 +753,10 @@
     "summary": "A mass grave at Peshtigo contains victims of the 1871 fire whose remains could not be individually identified.",
     "source": "Wisconsin Historical Society — State Historical Markers / Wisconsin History",
     "sourceUrl": "https://www.wisconsinhistory.org/connect-with-local-history-outreach/wisconsin-state-historical-markers/",
-    "location": "Peshtigo, Wisconsin"
+    "location": "Peshtigo, Wisconsin",
+    "image": "images/stories/peshtigo-fire.jpg",
+    "imageAlt": "Historic depiction of the 1871 Peshtigo Fire",
+    "imageCredit": "Wikimedia Commons — Public Domain"
   },
   {
     "title": "Marinette Grew From Lumber and the Menominee River",

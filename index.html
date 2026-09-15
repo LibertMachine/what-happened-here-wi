@@ -11,7 +11,7 @@
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   />
 
-  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="stylesheet" href="css/style.css?v=4" />
 </head>
 
 <body>
@@ -174,7 +174,18 @@
 
   <div class="story-divider"></div>
 
-  <p id="storySummary"></p>
+<div id="storyImageWrap" class="story-image-wrap hidden">
+  <img
+    id="storyImage"
+    class="story-image"
+    src=""
+    alt=""
+  />
+
+  <p id="storyImageCredit" class="story-image-credit"></p>
+</div>
+
+<p id="storySummary"></p>
 
   <div class="story-footer">
 
@@ -203,7 +214,7 @@
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
   </script>
 
-  <script src="js/app.js?v=3"></script>
+  <script src="js/app.js?v=4"></script>
 
 </body>
 </html>

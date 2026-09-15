@@ -81,6 +81,34 @@ function showStory(event) {
   document.getElementById("storyLocation").textContent =
   event.location || "";
 
+  const storyImageWrap =
+  document.getElementById("storyImageWrap");
+
+const storyImage =
+  document.getElementById("storyImage");
+
+const storyImageCredit =
+  document.getElementById("storyImageCredit");
+
+if (event.image) {
+  storyImage.src = event.image;
+  storyImage.alt =
+    event.imageAlt || event.title;
+
+  storyImageCredit.textContent =
+    event.imageCredit
+      ? `Photo: ${event.imageCredit}`
+      : "";
+
+  storyImageWrap.classList.remove("hidden");
+} else {
+  storyImage.src = "";
+  storyImage.alt = "";
+  storyImageCredit.textContent = "";
+
+  storyImageWrap.classList.add("hidden");
+}
+  
   document.getElementById(
   "storyDistance"
 ).textContent =

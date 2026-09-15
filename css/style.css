@@ -402,6 +402,32 @@ main {
   background: var(--red-light);
 }
 
+.story-image-wrap {
+  max-width: 850px;
+  margin: 0 0 24px;
+}
+
+.story-image-wrap.hidden {
+  display: none;
+}
+
+.story-image {
+  display: block;
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.story-image-credit {
+  margin: 8px 2px 0;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+
 #storySummary {
   max-width: 850px;
 
