@@ -34,20 +34,87 @@ async function loadEvents() {
         event.lat,
         event.lng
       ]);
+    
+      const storiesHere = events.filter(
+        (otherEvent) =>
+          otherEvent.lat === event.lat &&
+          otherEvent.lng === event.lng
+      );
+    
+      if (storiesHere.length > 1) {
+        marker.bindPopup(`
+  <div class="multi-story-popup">
 
-      marker.bindPopup(`
-        <strong>${event.title}</strong><br>
-        ${event.year}
-      `);
+    <p class="multi-story-eyebrow">
+      ${storiesHere.length} STORIES HAPPENED HERE
+    </p>
 
-      marker.on("click", () => {
-        showStory(event);
-      });
+    <div class="multi-story-list">
+      ${storiesHere
+        .map(
+          (story) => `
+            <button
+              class="story-popup-link"
+              data-story-title="${story.title}"
+            >
+              <span class="popup-story-year">
+                ${story.year}
+              </span>
 
+              <span class="popup-story-title">
+                ${story.title}
+              </span>
+
+              <span class="popup-story-arrow">
+                →
+              </span>
+            </button>
+          `
+        )
+        .join("")}
+    </div>
+
+    <p class="multi-story-hint">
+      Choose a story to explore
+    </p>
+
+  </div>
+`);
+    
+        marker.on("popupopen", () => {
+          document
+            .querySelectorAll(".story-popup-link")
+            .forEach((button) => {
+              button.addEventListener("click", () => {
+                const selectedStory =
+                  events.find(
+                    (story) =>
+                      story.title ===
+                      button.dataset.storyTitle
+                  );
+    
+                if (selectedStory) {
+                  showStory(selectedStory);
+                  map.closePopup();
+                }
+              });
+            });
+        });
+      } else {
+        marker.bindPopup(`
+          <strong>${event.title}</strong><br>
+          ${event.year}
+        `);
+    
+        marker.on("click", () => {
+          showStory(event);
+        });
+      }
+    
       event.marker = marker;
-
+    
       eventMarkers.push(marker);
-
+    
       marker.addTo(map);
     });
 
