@@ -50,56 +50,71 @@ locationGroups.forEach((storiesHere) => {
   ]);
 
   if (storiesHere.length > 1) {
-    marker.bindPopup(`
-      <div class="multi-story-popup">
-
-        <p class="multi-story-eyebrow">
-          ${storiesHere.length} STORIES HAPPENED HERE
-        </p>
-
-        <div class="multi-story-list">
-          ${storiesHere
-            .map(
-              (story) => `
-                <button
-                  class="story-popup-link"
-                  data-story-title="${story.title}"
-                >
-                  <span class="popup-story-year">
-                    ${story.year}
-                  </span>
-
-                  <span class="popup-story-title">
-                    ${story.title}
-                  </span>
-
-                  <span class="popup-story-arrow">
-                    →
-                  </span>
-                </button>
-              `
-            )
-            .join("")}
-        </div>
-
-        <p class="multi-story-hint">
-          Choose a story to explore
-        </p>
-
-      </div>
-    `);
-
+    marker.bindPopup("");
+  
     marker.on("popupopen", () => {
+      const visibleStories = storiesHere.filter(
+        (story) => story.isVisible !== false
+      );
+  
+      marker.setPopupContent(`
+        <div class="multi-story-popup">
+  
+          <p class="multi-story-eyebrow">
+            ${visibleStories.length} ${
+              visibleStories.length === 1
+                ? "STORY"
+                : "STORIES"
+            } HAPPENED HERE
+          </p>
+  
+          <div class="multi-story-list">
+            ${visibleStories
+              .map(
+                (story) => `
+                  <button
+                    class="story-popup-link"
+                    data-story-title="${story.title}"
+                  >
+                    <span class="popup-story-year">
+                      ${story.year}
+                    </span>
+  
+                    <span class="popup-story-title">
+                      ${story.title}
+                    </span>
+  
+                    <span class="popup-story-arrow">
+                      →
+                    </span>
+                  </button>
+                `
+              )
+              .join("")}
+          </div>
+  
+          <p class="multi-story-hint">
+            ${
+              visibleStories.length === 1
+                ? "Explore this story"
+                : "Choose a story to explore"
+            }
+          </p>
+  
+        </div>
+      `);
+  
       document
         .querySelectorAll(".story-popup-link")
         .forEach((button) => {
           button.addEventListener("click", () => {
-            const selectedStory = storiesHere.find(
-              (story) =>
-                story.title ===
-                button.dataset.storyTitle
-            );
-
+            const selectedStory =
+              visibleStories.find(
+                (story) =>
+                  story.title ===
+                  button.dataset.storyTitle
+              );
+  
             if (selectedStory) {
               showStory(selectedStory);
               map.closePopup();
@@ -112,7 +127,7 @@ locationGroups.forEach((storiesHere) => {
       <strong>${firstStory.title}</strong><br>
       ${firstStory.year}
     `);
-
+  
     marker.on("click", () => {
       showStory(firstStory);
     });
@@ -214,8 +229,8 @@ if (event.sourceUrl) {
 document
   .getElementById("surpriseBtn")
   .addEventListener("click", () => {
-    const visibleEvents = events.filter((event) =>
-      map.hasLayer(event.marker)
+    const visibleEvents = events.filter(
+      (event) => event.isVisible
     );
 
     if (visibleEvents.length === 0) {
