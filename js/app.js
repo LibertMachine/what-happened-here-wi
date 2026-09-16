@@ -29,94 +29,103 @@ async function loadEvents() {
 
     events = await response.json();
 
-    events.forEach((event) => {
-      const marker = L.marker([
-        event.lat,
-        event.lng
-      ]);
-    
-      const storiesHere = events.filter(
-        (otherEvent) =>
-          otherEvent.lat === event.lat &&
-          otherEvent.lng === event.lng
-      );
-    
-      if (storiesHere.length > 1) {
-        marker.bindPopup(`
-  <div class="multi-story-popup">
+    const locationGroups = new Map();
 
-    <p class="multi-story-eyebrow">
-      ${storiesHere.length} STORIES HAPPENED HERE
-    </p>
+events.forEach((event) => {
+  const locationKey = `${event.lat},${event.lng}`;
 
-    <div class="multi-story-list">
-      ${storiesHere
-        .map(
-          (story) => `
-            <button
-              class="story-popup-link"
-              data-story-title="${story.title}"
-            >
-              <span class="popup-story-year">
-                ${story.year}
-              </span>
+  if (!locationGroups.has(locationKey)) {
+    locationGroups.set(locationKey, []);
+  }
 
-              <span class="popup-story-title">
-                ${story.title}
-              </span>
+  locationGroups.get(locationKey).push(event);
+});
 
-              <span class="popup-story-arrow">
-                →
-              </span>
-            </button>
-          `
-        )
-        .join("")}
-    </div>
+locationGroups.forEach((storiesHere) => {
+  const firstStory = storiesHere[0];
 
-    <p class="multi-story-hint">
-      Choose a story to explore
-    </p>
+  const marker = L.marker([
+    firstStory.lat,
+    firstStory.lng
+  ]);
 
-  </div>
-`);
-    
-        marker.on("popupopen", () => {
-          document
-            .querySelectorAll(".story-popup-link")
-            .forEach((button) => {
-              button.addEventListener("click", () => {
-                const selectedStory =
-                  events.find(
-                    (story) =>
-                      story.title ===
-                      button.dataset.storyTitle
-                  );
-    
-                if (selectedStory) {
-                  showStory(selectedStory);
-                  map.closePopup();
-                }
-              });
-            });
+  if (storiesHere.length > 1) {
+    marker.bindPopup(`
+      <div class="multi-story-popup">
+
+        <p class="multi-story-eyebrow">
+          ${storiesHere.length} STORIES HAPPENED HERE
+        </p>
+
+        <div class="multi-story-list">
+          ${storiesHere
+            .map(
+              (story) => `
+                <button
+                  class="story-popup-link"
+                  data-story-title="${story.title}"
+                >
+                  <span class="popup-story-year">
+                    ${story.year}
+                  </span>
+
+                  <span class="popup-story-title">
+                    ${story.title}
+                  </span>
+
+                  <span class="popup-story-arrow">
+                    →
+                  </span>
+                </button>
+              `
+            )
+            .join("")}
+        </div>
+
+        <p class="multi-story-hint">
+          Choose a story to explore
+        </p>
+
+      </div>
+    `);
+
+    marker.on("popupopen", () => {
+      document
+        .querySelectorAll(".story-popup-link")
+        .forEach((button) => {
+          button.addEventListener("click", () => {
+            const selectedStory = storiesHere.find(
+              (story) =>
+                story.title ===
+                button.dataset.storyTitle
+            );
+
+            if (selectedStory) {
+              showStory(selectedStory);
+              map.closePopup();
+            }
+          });
         });
-      } else {
-        marker.bindPopup(`
-          <strong>${event.title}</strong><br>
-          ${event.year}
-        `);
-    
-        marker.on("click", () => {
-          showStory(event);
-        });
-      }
-    
-      event.marker = marker;
-    
-      eventMarkers.push(marker);
-    
-      marker.addTo(map);
     });
+  } else {
+    marker.bindPopup(`
+      <strong>${firstStory.title}</strong><br>
+      ${firstStory.year}
+    `);
+
+    marker.on("click", () => {
+      showStory(firstStory);
+    });
+  }
+
+  storiesHere.forEach((story) => {
+    story.marker = marker;
+  });
+
+  eventMarkers.push(marker);
+
+  marker.addTo(map);
+});
 
     console.log(
   `${events.length} historical events loaded`
@@ -520,44 +529,61 @@ function updateClosestStory() {
 function updateVisibleEvents() {
   let visibleCount = 0;
 
+  // First decide which individual stories
+  // match the current filters.
   events.forEach((event) => {
     let withinRadius = true;
 
     if (
-  userLat !== null &&
-  userLng !== null
-) {
-  const distance = milesBetween(
-    userLat,
-    userLng,
-    event.lat,
-    event.lng
-  );
+      userLat !== null &&
+      userLng !== null
+    ) {
+      const distance = milesBetween(
+        userLat,
+        userLng,
+        event.lat,
+        event.lng
+      );
 
-  event.distance = distance;
+      event.distance = distance;
 
-  if (selectedRadius !== "all") {
-    withinRadius =
-      distance <= selectedRadius;
-  }
-}
+      if (selectedRadius !== "all") {
+        withinRadius =
+          distance <= selectedRadius;
+      }
+    }
 
     const matchesCategory =
       selectedCategory === "All" ||
       event.category === selectedCategory;
 
-    const shouldShow =
+    event.isVisible =
       withinRadius && matchesCategory;
 
-    if (shouldShow) {
+    if (event.isVisible) {
       visibleCount++;
+    }
+  });
 
-      if (!map.hasLayer(event.marker)) {
-        event.marker.addTo(map);
+  // Then decide which physical markers
+  // should appear on the map.
+  eventMarkers.forEach((marker) => {
+    const storiesForMarker = events.filter(
+      (event) => event.marker === marker
+    );
+
+    const markerShouldShow =
+      storiesForMarker.some(
+        (event) => event.isVisible
+      );
+
+    if (markerShouldShow) {
+      if (!map.hasLayer(marker)) {
+        marker.addTo(map);
       }
     } else {
-      if (map.hasLayer(event.marker)) {
-        map.removeLayer(event.marker);
+      if (map.hasLayer(marker)) {
+        map.removeLayer(marker);
       }
     }
   });
