@@ -44,17 +44,20 @@ events.forEach((event) => {
 locationGroups.forEach((storiesHere) => {
   const firstStory = storiesHere[0];
 
-  const storyIcon = L.divIcon({
-    className: "story-marker-wrapper",
-    html: `
-  <div class="story-marker">
-    <span class="story-marker-question">?</span>
-  </div>
-`,
-    iconSize: [28, 36],
-    iconAnchor: [14, 36],
-    popupAnchor: [0, -34]
-  });
+  const markerType =
+  firstStory.markerType || "history";
+
+const storyIcon = L.divIcon({
+  className: "story-marker-wrapper",
+  html: `
+    <div class="story-marker story-marker-${markerType}">
+      <span class="story-marker-question">?</span>
+    </div>
+  `,
+  iconSize: [28, 36],
+  iconAnchor: [14, 36],
+  popupAnchor: [0, -34]
+});
   
   const marker = L.marker(
     [
@@ -366,6 +369,10 @@ let selectedRadius = "all";
 
 let selectedCategory = "All";
 
+let selectedMarkerType = "All";
+
+
+
 
 const storyCloseBtn =
   document.getElementById("storyCloseBtn");
@@ -436,6 +443,24 @@ categoryButtons.forEach((button) => {
 
     selectedCategory =
       button.dataset.category;
+
+    updateVisibleEvents();
+  });
+});
+
+const storyTypeButtons =
+  document.querySelectorAll(".story-type-btn");
+
+storyTypeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    storyTypeButtons.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    selectedMarkerType =
+      button.dataset.markerType;
 
     updateVisibleEvents();
   });
@@ -586,11 +611,20 @@ function updateVisibleEvents() {
     }
 
     const matchesCategory =
-      selectedCategory === "All" ||
-      event.category === selectedCategory;
+  selectedCategory === "All" ||
+  event.category === selectedCategory;
 
-    event.isVisible =
-      withinRadius && matchesCategory;
+    const eventMarkerType =
+  event.markerType || "history";
+
+    const matchesMarkerType =
+  selectedMarkerType === "All" ||
+  eventMarkerType === selectedMarkerType;
+
+event.isVisible =
+  withinRadius &&
+  matchesCategory &&
+  matchesMarkerType;
 
     if (event.isVisible) {
       visibleCount++;
