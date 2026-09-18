@@ -797,3 +797,55 @@ main {
 .multi-story-hint {
   color: #666666;
 }
+
+/* ========================================
+   WHAT HAPPENED HERE — MAP MARKERS
+======================================== */
+
+.story-marker-wrapper {
+  background: transparent;
+  border: none;
+}
+
+.story-marker {
+  width: 26px;
+  height: 26px;
+
+  background: #171612;
+  border: 2px solid #c8a96b;
+
+  border-radius: 50% 50% 50% 0;
+
+  transform: rotate(-45deg);
+
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.story-marker-question {
+  color: #c8a96b;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1;
+
+  transform: rotate(45deg);
+}
+
+.story-marker:hover {
+  transform:
+    rotate(-45deg)
+    scale(1.15);
+
+  box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.45);
+}

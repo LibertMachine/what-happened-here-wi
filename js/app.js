@@ -44,10 +44,27 @@ events.forEach((event) => {
 locationGroups.forEach((storiesHere) => {
   const firstStory = storiesHere[0];
 
-  const marker = L.marker([
-    firstStory.lat,
-    firstStory.lng
-  ]);
+  const storyIcon = L.divIcon({
+    className: "story-marker-wrapper",
+    html: `
+  <div class="story-marker">
+    <span class="story-marker-question">?</span>
+  </div>
+`,
+    iconSize: [28, 36],
+    iconAnchor: [14, 36],
+    popupAnchor: [0, -34]
+  });
+  
+  const marker = L.marker(
+    [
+      firstStory.lat,
+      firstStory.lng
+    ],
+    {
+      icon: storyIcon
+    }
+  );
 
   if (storiesHere.length > 1) {
     marker.bindPopup("");
