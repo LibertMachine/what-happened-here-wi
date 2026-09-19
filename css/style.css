@@ -835,6 +835,14 @@ main {
   border-color: #ffffff;
 }
 
+.story-marker-outdoors {
+
+  background: #ff6700;
+
+  border-color: #ffffff;
+
+}
+
 .story-marker:hover {
   transform:
     rotate(-45deg)
@@ -913,4 +921,16 @@ main {
   background: #1f5f8b;
   border-color: #ffffff;
   color: #ffffff;
+}
+
+/* HUNTING + OUTDOORS */
+
+.story-type-btn[data-marker-type="outdoors"].active {
+
+  background: #ff6700;
+
+  border-color: #ffffff;
+
+  color: #ffffff;
+
 }
