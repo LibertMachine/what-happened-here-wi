@@ -678,3 +678,55 @@ event.isVisible =
       } to explore across Wisconsin`;
   }
 }
+
+const exploreBtn =
+  document.getElementById("exploreBtn");
+
+if (exploreBtn) {
+  exploreBtn.addEventListener("click", () => {
+
+    // Find only stories currently allowed
+    // by the active filters.
+    const visibleEvents =
+      events.filter(
+        (event) =>
+          event.isVisible &&
+          event.marker &&
+          map.hasLayer(event.marker)
+      );
+
+    if (visibleEvents.length === 0) {
+      return;
+    }
+
+    // Pick a random visible story.
+    const randomEvent =
+      visibleEvents[
+        Math.floor(
+          Math.random() * visibleEvents.length
+        )
+      ];
+
+    const targetMarker =
+      randomEvent.marker;
+
+    // Fly to the story location.
+    map.flyTo(
+      [
+        randomEvent.lat,
+        randomEvent.lng
+      ],
+      11,
+      {
+        animate: true,
+        duration: 1.4
+      }
+    );
+
+    // Open the marker after arriving.
+    map.once("moveend", () => {
+      targetMarker.openPopup();
+    });
+
+  });
+}
