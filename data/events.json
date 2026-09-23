@@ -1406,7 +1406,6 @@
     "sourceUrl": "https://www.wisconsinhistory.org/connect-with-local-history-outreach/wisconsin-state-historical-markers/",
     "location": "Kenosha, Wisconsin"
   },
-
   {
     "title": "A Tornado Gave Wabeno Its Name",
     "year": "1880",
@@ -1671,7 +1670,6 @@
     "sourceUrl": "https://www.wisconsinhistory.org/record/image/W012HZO",
     "location": "Hurley, Wisconsin"
   },
-
   {
     "title": "Fire Nearly Erased Fifield Before Its Town Hall Was Built",
     "year": "1893",
@@ -2032,7 +2030,6 @@
     "sourceUrl": "https://www.sawyercountyhist.org/sawyer-county/",
     "location": "Sawyer County"
   },
-
   {
     "title": "Alma Became a Lumber Distribution Powerhouse",
     "year": "1867–1889",
@@ -2393,7 +2390,6 @@
     "sourceUrl": "https://villalouis.wisconsinhistory.org/explore/history-villa-louis/",
     "location": "Prairie du Chien, Crawford County"
   },
-
   {
     "title": "Roche-A-Cri Was Once an Island in a Glacial Lake",
     "year": "c. 13000 BCE",
@@ -2874,7 +2870,6 @@
     "sourceUrl": "https://dnr.wisconsin.gov/topic/parks/wildcat/history",
     "location": "Wildcat Mountain State Park, Vernon County"
   },
-
   {
     "title": "Wisconsin's Oldest Known Cemetery Site Lies Beside the Oconto River",
     "year": "c. 4000–2000 BCE",
@@ -3367,7 +3362,6 @@
     "sourceUrl": "https://www.wisconsinhistory.org/record/property/HI23267",
     "location": "Oconto and Marinette Counties"
   },
-
   {
     "title": "A Lumber Mill Here Grew Into the World's Largest Lumber Corporation",
     "year": "1870s",
@@ -3860,7 +3854,6 @@
     "sourceUrl": "https://www.wisconsinhistory.org/record/image/W01398N",
     "location": "New Richmond, St. Croix County"
   },
-
   {
     "title": "Stanley's Lumber Mill Needed a Dam Before It Needed Buildings",
     "year": "1890s",
@@ -4353,7 +4346,6 @@
     "sourceUrl": "https://www.wiclarkcountyhistory.org/0data/0/179.htm",
     "location": "Thorp, Clark County"
   },
-
   {
     "title": "Horicon Marsh Was Turned Into What People Thought Was the World's Largest Man-Made Lake",
     "year": "1846",
@@ -4846,7 +4838,6 @@
     "sourceUrl": "https://legacy.wisconsinhistory.org/Records/Article/CS2921",
     "location": "Lake Michigan off Belgium, Ozaukee County"
   },
-
   {
     "title": "A Stagecoach Road Once Cut Through Today's Hartman Creek State Park",
     "year": "1800s",
@@ -5351,7 +5342,6 @@
     "sourceUrl": "https://www.wisconsinhistory.org/record/multi/W01534V",
     "location": "Waupaca County"
   },
-
   {
     "title": "An Antigo Logging Crew Was Photographed in Camp in 1886",
     "year": "1886",
@@ -5544,7 +5534,6 @@
     "sourceUrl": "https://www.tomahawkhistoricalsoc.org/custom/sturdevantchandler/lumberCamps.php",
     "location": "Tomahawk region, Lincoln County"
   },
-
   {
     "title": "Eagle River's First Logging Camp Sent Pine Logs Floating Downriver",
     "year": "1856",
@@ -5785,7 +5774,6 @@
     "sourceUrl": "https://www.minocqua.org/blog/post/summer-legacy-the-resort-tradition/",
     "location": "Minocqua area, Oneida County"
   },
-
   {
     "title": "Mondovi Got Its Name From Napoleon's Battlefield in Italy",
     "year": "1850s",
@@ -6026,7 +6014,6 @@
     "sourceUrl": "https://www.wisconsinrailroadbooks.com/mondovi-line.html",
     "location": "Osseo, Trempealeau County"
   },
-
   {
     "title": "Lake Winnebago Holds One of the World's Largest Lake Sturgeon Populations",
     "year": "Modern",
@@ -6131,7 +6118,6 @@
     "location": "Lake Superior, northern Wisconsin",
     "markerType": "water"
   },
-
   {
     "title": "12 Hunters and 9 Bucks at a Northwoods Deer Camp",
     "year": "1915",
@@ -6145,347 +6131,641 @@
     "location": "Winter, Sawyer County, Wisconsin",
     "markerType": "outdoors"
   },
-
   {
-  "title": "Six Hunters Posed With Nine Deer at an 1885 Northwoods Camp",
-  "year": "1885",
-  "category": "Hunting & Outdoors",
-  "lat": 44.8113,
-  "lng": -91.4985,
-  "locationAccuracy": "Eau Claire area; exact hunting camp location unknown",
-  "summary": "Around 1885, six Eau Claire deer hunters posed with their rifles, hunting dogs and nine deer hanging from a buck pole between rough log structures. The surviving photograph offers a remarkable glimpse of Wisconsin deer-camp culture nearly 140 years ago.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://www.wisconsinhistory.org/record/image/W012B0Z/deer-hunters-camp",
-  "location": "Eau Claire area, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "A 1909 Photograph Preserved a Taylor County Deer Camp",
-  "year": "1909",
-  "category": "Hunting & Outdoors",
-  "lat": 45.1,
-  "lng": -90.7,
-  "locationAccuracy": "Donald area; exact hunting camp location unknown",
-  "summary": "In 1909, hunters gathered with their rifles in front of deer carcasses at a camp near Donald in Taylor County. The photograph preserves an early Wisconsin deer-camp scene complete with snow, tents and the hunters assembled after their hunt.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://legacy.wisconsinhistory.org/Records/Image/IM118287",
-  "location": "Donald, Taylor County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "A Duck Hunter Opened the 1936 Season From a Boat Near Fremont",
-  "year": "1936",
-  "category": "Hunting & Outdoors",
-  "lat": 44.2597,
-  "lng": -88.8646,
-  "locationAccuracy": "Lake Partridge near Fremont",
-  "summary": "On October 10, 1936, a photographer captured a hunter standing in his boat and firing at a flock of mallards on Lake Partridge near Fremont. The image was taken on opening day of Wisconsin's duck hunting season and survives in the Wisconsin Conservation Department's historic photograph collection.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://www.wisconsinhistory.org/record/image/W014E0O/duck-hunting",
-  "location": "Lake Partridge near Fremont, Waupaca County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Market Hunting Devastated Horicon Marsh's Duck Population",
-  "year": "1870s–early 1900s",
-  "category": "Hunting & Outdoors",
-  "lat": 43.57,
-  "lng": -88.63,
-  "locationAccuracy": "Horicon Marsh",
-  "summary": "Horicon Marsh once attracted enormous numbers of waterfowl—and hunters. From the 1870s into the early 1900s, unregulated market hunting devastated the marsh's duck populations. The decline became part of a much larger conservation story, as hunters and conservationists later pushed to restore and protect the marsh as waterfowl habitat.",
-  "source": "Wisconsin DNR",
-  "sourceUrl": "https://dnr.wisconsin.gov/topic/lands/WildlifeAreas/horicon/humhist.html",
-  "location": "Horicon Marsh, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Twenty-Five Elk Were Released Into Wisconsin's Northwoods",
-  "year": "1995",
-  "category": "Hunting & Outdoors",
-  "lat": 46.17,
-  "lng": -90.91,
-  "locationAccuracy": "Clam Lake elk reintroduction area",
-  "summary": "After generations without a wild elk population, Wisconsin began an ambitious restoration experiment near Clam Lake. Twenty-five elk were brought to the area in February 1995, quarantined and tested, then released into the Chequamegon-Nicolet National Forest on May 17. The small founding herd became the beginning of Wisconsin's modern elk restoration.",
-  "source": "Wisconsin DNR",
-  "sourceUrl": "https://dnr.wisconsin.gov/topic/wildlifehabitat/elkreintroduction.html",
-  "location": "Clam Lake, northern Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Wisconsin Held Its First Modern Managed Elk Hunt",
-  "year": "2018",
-  "category": "Hunting & Outdoors",
-  "lat": 46.17,
-  "lng": -90.91,
-  "locationAccuracy": "Northern Elk Management Zone / Clam Lake area",
-  "summary": "Twenty-three years after elk were reintroduced near Clam Lake, Wisconsin's northern herd had grown enough to support a limited harvest. In October 2018, the state held its first modern managed elk hunt—a milestone that would have seemed almost impossible when just 25 animals formed the original reintroduced herd.",
-  "source": "Wisconsin DNR",
-  "sourceUrl": "https://dnr.wisconsin.gov/topic/hunt/elkhunting",
-  "location": "Northern Elk Management Zone, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Wild Turkeys Returned to Wisconsin After Disappearing From the State",
-  "year": "1976",
-  "category": "Hunting & Outdoors",
-  "lat": 43.56,
-  "lng": -90.89,
-  "locationAccuracy": "Vernon County; represents initial restoration area",
-  "summary": "Wild turkeys had disappeared from Wisconsin, but in 1976 wildlife managers began a successful restoration using wild-trapped birds from Missouri. The first birds were released in Vernon County. From that foothold in the Driftless Area, turkeys spread across Wisconsin and eventually established populations in every county.",
-  "source": "Wisconsin DNR",
-  "sourceUrl": "https://dnr.wisconsin.gov/topic/WildlifeHabitat/turkeymanagement",
-  "location": "Vernon County, Wisconsin",
-  "markerType": "outdoors"
-},
-
-{
-  "title": "Wisconsin Put a Bounty on Wolves",
-  "year": "1865",
-  "category": "Hunting & Outdoors",
-  "lat": 44.5,
-  "lng": -89.5,
-  "locationAccuracy": "Statewide historical event; marker placed near central Wisconsin",
-  "summary": "As Wisconsin's deer and other wild prey declined during the 1800s, wolves increasingly came into conflict with livestock. In 1865, the Wisconsin Legislature established a bounty on wolves. The bounty remained in place until 1957, by which time wolves had already disappeared from most of the state.",
-  "source": "Wisconsin DNR",
-  "sourceUrl": "https://dnr.wisconsin.gov/topic/WildlifeHabitat/wolf",
-  "location": "Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Wisconsin's Wolves Returned on Their Own",
-  "year": "1978",
-  "category": "Hunting & Outdoors",
-  "lat": 46.35,
-  "lng": -91.5,
-  "locationAccuracy": "Douglas County; represents location of first confirmed breeding pack",
-  "summary": "Wolves were considered extirpated from Wisconsin by 1960, but they were not later released here by wildlife managers. Protected wolves expanding naturally from Minnesota crossed back into northwestern Wisconsin, and in 1978 the state's first confirmed returning breeding pack was documented in Douglas County.",
-  "source": "Wisconsin DNR",
-  "sourceUrl": "https://dnr.wisconsin.gov/topic/WildlifeHabitat/wolf",
-  "location": "Douglas County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Wisconsin's Black Bears Came Back From a Historic Decline",
-  "year": "1900s–present",
-  "category": "Hunting & Outdoors",
-  "lat": 45.8,
-  "lng": -89.5,
-  "locationAccuracy": "Northern Wisconsin; represents historic core bear range",
-  "summary": "Black bears once lived throughout Wisconsin, but habitat loss and unregulated market hunting caused their numbers and range to collapse. By 1950, bears were largely confined to the northern third of the state. Increased protection, changing attitudes and regulated management helped the population recover and expand again.",
-  "source": "Wisconsin DNR",
-  "sourceUrl": "https://dnr.wisconsin.gov/topic/WildlifeHabitat/BlackBears",
-  "location": "Northern Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Wisconsin Built a Massive Game Farm to Raise Wildlife",
-  "year": "1934",
-  "category": "Hunting & Outdoors",
-  "lat": 43.39,
-  "lng": -89.4,
-  "locationAccuracy": "State Game Farm, Poynette area",
-  "summary": "Wisconsin moved its experimental game and fur farm to Poynette in 1934. Working with the WPA and Civilian Conservation Corps, the Conservation Department built a major propagation center that raised pheasants, grouse, quail, turkeys, prairie chickens, waterfowl and even furbearers. A hatchery capable of incubating 150,000 game-bird eggs was completed in 1938.",
-  "source": "Wisconsin DNR",
-  "sourceUrl": "https://dnr.wisconsin.gov/topic/lands/gamefarm",
-  "location": "Poynette, Columbia County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Wisconsin Has Released Millions of Pheasants",
-  "year": "1928–present",
-  "category": "Hunting & Outdoors",
-  "lat": 43.39,
-  "lng": -89.4,
-  "locationAccuracy": "State Game Farm, Poynette",
-  "summary": "Wisconsin began state pheasant stocking in 1928 as the ring-necked pheasant was becoming an increasingly popular game bird. Over the decades, the State Game Farm and cooperative programs produced and released more than 12 million pheasants, creating one of Wisconsin's longest-running wildlife propagation programs.",
-  "source": "Wisconsin DNR",
-  "sourceUrl": "https://dnr.wisconsin.gov/topic/lands/gamefarm",
-  "location": "Poynette, Columbia County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Sharp-Tailed Grouse Once Lived Across Wisconsin",
-  "year": "1900s–present",
-  "category": "Hunting & Outdoors",
-  "lat": 46.0,
-  "lng": -92.0,
-  "locationAccuracy": "Northwestern Wisconsin; representative of remaining barrens habitat",
-  "summary": "Sharp-tailed grouse were historically found across Wisconsin, thriving in open pine and oak barrens and savanna. Beginning in the early 1900s, habitat loss and fragmentation drove a long decline. Wisconsin began focused management in the late 1940s and early 1950s, and today most remaining birds are concentrated in the northwest.",
-  "source": "Wisconsin DNR",
-  "sourceUrl": "https://dnr.wisconsin.gov/topic/WildlifeHabitat/Sharp-tailedGrouseManagement",
-  "location": "Northwestern Wisconsin",
-  "markerType": "outdoors"
-},
-
-{
-  "title": "Hunters Hauled Their Deer Out of the Oconto County Woods",
-  "year": "1910",
-  "category": "Hunting & Outdoors",
-  "lat": 44.8872,
-  "lng": -87.8645,
-  "locationAccuracy": "Oconto County; exact hunting location unknown",
-  "summary": "In 1910, a photographer captured a group of hunters bringing a deer out of the woods in Oconto County. Frank Langeois, son of Joseph Langeois Jr., stands in the center of the surviving photograph. It preserves a simple but vivid scene from Northeast Wisconsin deer hunting more than a century ago.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://www.wisconsinhistory.org/record/image/W0141F2",
-  "location": "Oconto County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Four Deer Were Hung From the Trees Along a Cassville Sidewalk",
-  "year": "1910",
-  "category": "Hunting & Outdoors",
-  "lat": 42.7153,
-  "lng": -90.9907,
-  "locationAccuracy": "Cassville community",
-  "summary": "Around 1910, hunters in Cassville posed with their guns while four harvested deer hung from trees beside a sidewalk. A small child stood nearby as photographer Frank Feiker captured the scene—a striking glimpse of how publicly the annual deer harvest was once displayed in Wisconsin communities.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://www.wisconsinhistory.org/record/image/W012HKL",
-  "location": "Cassville, Grant County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Two Bucks Were Displayed on a Downtown Burlington Sidewalk",
-  "year": "1900",
-  "category": "Hunting & Outdoors",
-  "lat": 42.6781,
-  "lng": -88.2762,
-  "locationAccuracy": "Pine Street, Burlington; marker represents downtown",
-  "summary": "In 1900, two harvested bucks were laid out on the wooden sidewalk in front of the Schwaller building on Pine Street in Burlington. Frank A. Schwaller and his son were among the men photographed with the deer, showing just how closely Wisconsin's hunting culture once intersected with everyday downtown life.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://www.wisconsinhistory.org/record/image/W011NNA",
-  "location": "Pine Street, Burlington, Racine County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Five Hunters Posed Beside Their Deer at a Taylor County Camp",
-  "year": "1905",
-  "category": "Hunting & Outdoors",
-  "lat": 45.1,
-  "lng": -90.7,
-  "locationAccuracy": "Donald area; exact camp location unknown",
-  "summary": "In March 1905, five hunters gathered for a photograph at a deer camp near Donald in Taylor County. Deer carcasses hung from a log pole beside the camp, preserving another remarkable view of the Northwoods hunting-camp tradition during the early 20th century.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://www.wisconsinhistory.org/record/image/W012AUR",
-  "location": "Donald, Taylor County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Hunters Once Carried Deer Out of the Woods on a Pole",
-  "year": "1904",
-  "category": "Hunting & Outdoors",
-  "lat": 45.101,
-  "lng": -90.703,
-  "locationAccuracy": "Donald area; exact hunting location unknown",
-  "summary": "A surviving photograph from the Donald area shows three hunters walking through the woods with their rifles while two of the men carry a harvested deer suspended from a pole across their shoulders. Before ATVs and modern hunting equipment, getting a deer out of the Northwoods could itself be a serious piece of work.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://www.wisconsinhistory.org/",
-  "location": "Donald, Taylor County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Three Deer Rode Into Madison Strapped to a Station Wagon",
-  "year": "1959",
-  "category": "Hunting & Outdoors",
-  "lat": 43.0731,
-  "lng": -89.4012,
-  "locationAccuracy": "Madison",
-  "summary": "In November 1959, Danny Sands and Dick Goldfield were photographed beside a wood-sided station wagon carrying three harvested deer. Two were strapped across the hood and another rode on the roof with its antlers prominently displayed—a scene from an era when returning from deer camp could make the vehicle itself part of the trophy display.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://www.wisconsinhistory.org/record/image/W01244J",
-  "location": "Madison, Dane County, Wisconsin",
-  "markerType": "outdoors"
-}
-
-,
-{
-  "title": "A 1949 Deer Hunt Was Photographed on Madeline Island",
-  "year": "1949",
-  "category": "Hunting & Outdoors",
-  "lat": 46.7833,
-  "lng": -90.7667,
-  "locationAccuracy": "Madeline Island; exact hunting location unknown",
-  "summary": "In 1949, three hunters were photographed in a clearing on Madeline Island with two harvested deer lying in front of them. One man held a rifle and another a shotgun, preserving a glimpse of deer hunting on Wisconsin's largest Lake Superior island.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://legacy.wisconsinhistory.org/Records?facets=CATEGORIES%3A%22Wisconsin+Historical+Images%22%2CFacetSubject%3A%22outdoor+photography%22%2CFacetSubject%3A%22hats%22%2CCONTENT_TYPE%3A%22Photograph%22%2CFacetSubject%3A%22deer+hunting%22",
-  "location": "Madeline Island, Ashland County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Five Chippewa Falls Hunters Came Back With Seven Deer",
-  "year": "1947",
-  "category": "Hunting & Outdoors",
-  "lat": 44.9369,
-  "lng": -91.3929,
-  "locationAccuracy": "Chippewa Falls area; exact hunting camp location unknown",
-  "summary": "In 1947, five Chippewa Falls deer hunters posed with their rifles in front of a buck pole holding seven harvested deer. A small animal, possibly a rabbit, also hung from the pole beside a log building—an unmistakable snapshot of postwar Wisconsin deer-camp culture.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://legacy.wisconsinhistory.org/Records?facets=CATEGORIES%3A%22Wisconsin+Historical+Images%22%2CCommunity%3A%22Chippewa+Falls%22%2CFacetSubject%3A%22botany%22",
-  "location": "Chippewa Falls, Chippewa County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Three Deer, a Car and a Very Curious Cat",
-  "year": "1948",
-  "category": "Hunting & Outdoors",
-  "lat": 44.15,
-  "lng": -90.15,
-  "locationAccuracy": "New Miner area; photograph identified as George Sterbens Farm",
-  "summary": "Around 1948, four men and a woman posed around a car near New Miner with three harvested deer stretched across its hood. But the strangest detail may be at the front of the car: a cat stood with its paws against the vehicle, staring up at the deer. John E. Limbach's photograph preserved the wonderfully odd scene.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://www.wisconsinhistory.org/record/image/W012BM0",
-  "location": "New Miner, Juneau County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Eight Hunters Displayed Six Deer at Wisconsin's Slovenian Settlement",
-  "year": "1912",
-  "category": "Hunting & Outdoors",
-  "lat": 44.735,
-  "lng": -90.73,
-  "locationAccuracy": "Willard community",
-  "summary": "In 1912, eight hunters gathered for a photograph at the Slovenian settlement at Willard in Clark County. Six harvested deer hung behind the group while the hunters posed with their guns, preserving a glimpse of how immigrant communities carried Wisconsin's growing deer-camp tradition into the Northwoods.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://legacy.wisconsinhistory.org/Records?facets=CATEGORIES%3A%22Wisconsin+Historical+Images%22%2CFOR_SALE%3A%221%22%2CFacetSubject%3A%22outdoor+photography%22%2CFacetSubject%3A%22portraits%2C+group%22%2CFacetYear%3A%5B1900+TO+1999%5D%2CFacetSubject%3A%22deer+hunting%22",
-  "location": "Willard, Clark County, Wisconsin",
-  "markerType": "outdoors"
-},
-{
-  "title": "Hunters Once Brought Their Deer Home by Railroad",
-  "year": "Early 1900s",
-  "category": "Hunting & Outdoors",
-  "lat": 45.66,
-  "lng": -89.65,
-  "locationAccuracy": "Harshaw railroad station area",
-  "summary": "Before pickups and ATVs became part of deer camp, the railroad was one way Wisconsin hunters reached the Northwoods and brought their harvest home. A surviving photograph from Harshaw shows a group of hunters standing with their guns and harvested deer on the railroad platform.",
-  "source": "Wisconsin Historical Society",
-  "sourceUrl": "https://legacy.wisconsinhistory.org/Records?facets=CATEGORIES%3A%22Wisconsin+Historical+Images%22%2CFORMAT_NUMBER_ORG%3A%22CF+9287%22",
-  "location": "Harshaw, Oneida County, Wisconsin",
-  "markerType": "outdoors"
-}
-
+    "title": "Six Hunters Posed With Nine Deer at an 1885 Northwoods Camp",
+    "year": "1885",
+    "category": "Hunting & Outdoors",
+    "lat": 44.8113,
+    "lng": -91.4985,
+    "locationAccuracy": "Eau Claire area; exact hunting camp location unknown",
+    "summary": "Around 1885, six Eau Claire deer hunters posed with their rifles, hunting dogs and nine deer hanging from a buck pole between rough log structures. The surviving photograph offers a remarkable glimpse of Wisconsin deer-camp culture nearly 140 years ago.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://www.wisconsinhistory.org/record/image/W012B0Z/deer-hunters-camp",
+    "location": "Eau Claire area, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "A 1909 Photograph Preserved a Taylor County Deer Camp",
+    "year": "1909",
+    "category": "Hunting & Outdoors",
+    "lat": 45.1,
+    "lng": -90.7,
+    "locationAccuracy": "Donald area; exact hunting camp location unknown",
+    "summary": "In 1909, hunters gathered with their rifles in front of deer carcasses at a camp near Donald in Taylor County. The photograph preserves an early Wisconsin deer-camp scene complete with snow, tents and the hunters assembled after their hunt.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://legacy.wisconsinhistory.org/Records/Image/IM118287",
+    "location": "Donald, Taylor County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "A Duck Hunter Opened the 1936 Season From a Boat Near Fremont",
+    "year": "1936",
+    "category": "Hunting & Outdoors",
+    "lat": 44.2597,
+    "lng": -88.8646,
+    "locationAccuracy": "Lake Partridge near Fremont",
+    "summary": "On October 10, 1936, a photographer captured a hunter standing in his boat and firing at a flock of mallards on Lake Partridge near Fremont. The image was taken on opening day of Wisconsin's duck hunting season and survives in the Wisconsin Conservation Department's historic photograph collection.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://www.wisconsinhistory.org/record/image/W014E0O/duck-hunting",
+    "location": "Lake Partridge near Fremont, Waupaca County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Market Hunting Devastated Horicon Marsh's Duck Population",
+    "year": "1870s–early 1900s",
+    "category": "Hunting & Outdoors",
+    "lat": 43.57,
+    "lng": -88.63,
+    "locationAccuracy": "Horicon Marsh",
+    "summary": "Horicon Marsh once attracted enormous numbers of waterfowl—and hunters. From the 1870s into the early 1900s, unregulated market hunting devastated the marsh's duck populations. The decline became part of a much larger conservation story, as hunters and conservationists later pushed to restore and protect the marsh as waterfowl habitat.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/lands/WildlifeAreas/horicon/humhist.html",
+    "location": "Horicon Marsh, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Twenty-Five Elk Were Released Into Wisconsin's Northwoods",
+    "year": "1995",
+    "category": "Hunting & Outdoors",
+    "lat": 46.17,
+    "lng": -90.91,
+    "locationAccuracy": "Clam Lake elk reintroduction area",
+    "summary": "After generations without a wild elk population, Wisconsin began an ambitious restoration experiment near Clam Lake. Twenty-five elk were brought to the area in February 1995, quarantined and tested, then released into the Chequamegon-Nicolet National Forest on May 17. The small founding herd became the beginning of Wisconsin's modern elk restoration.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/wildlifehabitat/elkreintroduction.html",
+    "location": "Clam Lake, northern Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Wisconsin Held Its First Modern Managed Elk Hunt",
+    "year": "2018",
+    "category": "Hunting & Outdoors",
+    "lat": 46.17,
+    "lng": -90.91,
+    "locationAccuracy": "Northern Elk Management Zone / Clam Lake area",
+    "summary": "Twenty-three years after elk were reintroduced near Clam Lake, Wisconsin's northern herd had grown enough to support a limited harvest. In October 2018, the state held its first modern managed elk hunt—a milestone that would have seemed almost impossible when just 25 animals formed the original reintroduced herd.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/hunt/elkhunting",
+    "location": "Northern Elk Management Zone, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Wild Turkeys Returned to Wisconsin After Disappearing From the State",
+    "year": "1976",
+    "category": "Hunting & Outdoors",
+    "lat": 43.56,
+    "lng": -90.89,
+    "locationAccuracy": "Vernon County; represents initial restoration area",
+    "summary": "Wild turkeys had disappeared from Wisconsin, but in 1976 wildlife managers began a successful restoration using wild-trapped birds from Missouri. The first birds were released in Vernon County. From that foothold in the Driftless Area, turkeys spread across Wisconsin and eventually established populations in every county.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/WildlifeHabitat/turkeymanagement",
+    "location": "Vernon County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Wisconsin Put a Bounty on Wolves",
+    "year": "1865",
+    "category": "Hunting & Outdoors",
+    "lat": 44.5,
+    "lng": -89.5,
+    "locationAccuracy": "Statewide historical event; marker placed near central Wisconsin",
+    "summary": "As Wisconsin's deer and other wild prey declined during the 1800s, wolves increasingly came into conflict with livestock. In 1865, the Wisconsin Legislature established a bounty on wolves. The bounty remained in place until 1957, by which time wolves had already disappeared from most of the state.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/WildlifeHabitat/wolf",
+    "location": "Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Wisconsin's Wolves Returned on Their Own",
+    "year": "1978",
+    "category": "Hunting & Outdoors",
+    "lat": 46.35,
+    "lng": -91.5,
+    "locationAccuracy": "Douglas County; represents location of first confirmed breeding pack",
+    "summary": "Wolves were considered extirpated from Wisconsin by 1960, but they were not later released here by wildlife managers. Protected wolves expanding naturally from Minnesota crossed back into northwestern Wisconsin, and in 1978 the state's first confirmed returning breeding pack was documented in Douglas County.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/WildlifeHabitat/wolf",
+    "location": "Douglas County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Wisconsin's Black Bears Came Back From a Historic Decline",
+    "year": "1900s–present",
+    "category": "Hunting & Outdoors",
+    "lat": 45.8,
+    "lng": -89.5,
+    "locationAccuracy": "Northern Wisconsin; represents historic core bear range",
+    "summary": "Black bears once lived throughout Wisconsin, but habitat loss and unregulated market hunting caused their numbers and range to collapse. By 1950, bears were largely confined to the northern third of the state. Increased protection, changing attitudes and regulated management helped the population recover and expand again.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/WildlifeHabitat/BlackBears",
+    "location": "Northern Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Wisconsin Built a Massive Game Farm to Raise Wildlife",
+    "year": "1934",
+    "category": "Hunting & Outdoors",
+    "lat": 43.39,
+    "lng": -89.4,
+    "locationAccuracy": "State Game Farm, Poynette area",
+    "summary": "Wisconsin moved its experimental game and fur farm to Poynette in 1934. Working with the WPA and Civilian Conservation Corps, the Conservation Department built a major propagation center that raised pheasants, grouse, quail, turkeys, prairie chickens, waterfowl and even furbearers. A hatchery capable of incubating 150,000 game-bird eggs was completed in 1938.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/lands/gamefarm",
+    "location": "Poynette, Columbia County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Wisconsin Has Released Millions of Pheasants",
+    "year": "1928–present",
+    "category": "Hunting & Outdoors",
+    "lat": 43.39,
+    "lng": -89.4,
+    "locationAccuracy": "State Game Farm, Poynette",
+    "summary": "Wisconsin began state pheasant stocking in 1928 as the ring-necked pheasant was becoming an increasingly popular game bird. Over the decades, the State Game Farm and cooperative programs produced and released more than 12 million pheasants, creating one of Wisconsin's longest-running wildlife propagation programs.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/lands/gamefarm",
+    "location": "Poynette, Columbia County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Sharp-Tailed Grouse Once Lived Across Wisconsin",
+    "year": "1900s–present",
+    "category": "Hunting & Outdoors",
+    "lat": 46.0,
+    "lng": -92.0,
+    "locationAccuracy": "Northwestern Wisconsin; representative of remaining barrens habitat",
+    "summary": "Sharp-tailed grouse were historically found across Wisconsin, thriving in open pine and oak barrens and savanna. Beginning in the early 1900s, habitat loss and fragmentation drove a long decline. Wisconsin began focused management in the late 1940s and early 1950s, and today most remaining birds are concentrated in the northwest.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/WildlifeHabitat/Sharp-tailedGrouseManagement",
+    "location": "Northwestern Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Hunters Hauled Their Deer Out of the Oconto County Woods",
+    "year": "1910",
+    "category": "Hunting & Outdoors",
+    "lat": 44.8872,
+    "lng": -87.8645,
+    "locationAccuracy": "Oconto County; exact hunting location unknown",
+    "summary": "In 1910, a photographer captured a group of hunters bringing a deer out of the woods in Oconto County. Frank Langeois, son of Joseph Langeois Jr., stands in the center of the surviving photograph. It preserves a simple but vivid scene from Northeast Wisconsin deer hunting more than a century ago.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://www.wisconsinhistory.org/record/image/W0141F2",
+    "location": "Oconto County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Four Deer Were Hung From the Trees Along a Cassville Sidewalk",
+    "year": "1910",
+    "category": "Hunting & Outdoors",
+    "lat": 42.7153,
+    "lng": -90.9907,
+    "locationAccuracy": "Cassville community",
+    "summary": "Around 1910, hunters in Cassville posed with their guns while four harvested deer hung from trees beside a sidewalk. A small child stood nearby as photographer Frank Feiker captured the scene—a striking glimpse of how publicly the annual deer harvest was once displayed in Wisconsin communities.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://www.wisconsinhistory.org/record/image/W012HKL",
+    "location": "Cassville, Grant County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Two Bucks Were Displayed on a Downtown Burlington Sidewalk",
+    "year": "1900",
+    "category": "Hunting & Outdoors",
+    "lat": 42.6781,
+    "lng": -88.2762,
+    "locationAccuracy": "Pine Street, Burlington; marker represents downtown",
+    "summary": "In 1900, two harvested bucks were laid out on the wooden sidewalk in front of the Schwaller building on Pine Street in Burlington. Frank A. Schwaller and his son were among the men photographed with the deer, showing just how closely Wisconsin's hunting culture once intersected with everyday downtown life.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://www.wisconsinhistory.org/record/image/W011NNA",
+    "location": "Pine Street, Burlington, Racine County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Five Hunters Posed Beside Their Deer at a Taylor County Camp",
+    "year": "1905",
+    "category": "Hunting & Outdoors",
+    "lat": 45.1,
+    "lng": -90.7,
+    "locationAccuracy": "Donald area; exact camp location unknown",
+    "summary": "In March 1905, five hunters gathered for a photograph at a deer camp near Donald in Taylor County. Deer carcasses hung from a log pole beside the camp, preserving another remarkable view of the Northwoods hunting-camp tradition during the early 20th century.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://www.wisconsinhistory.org/record/image/W012AUR",
+    "location": "Donald, Taylor County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Hunters Once Carried Deer Out of the Woods on a Pole",
+    "year": "1904",
+    "category": "Hunting & Outdoors",
+    "lat": 45.101,
+    "lng": -90.703,
+    "locationAccuracy": "Donald area; exact hunting location unknown",
+    "summary": "A surviving photograph from the Donald area shows three hunters walking through the woods with their rifles while two of the men carry a harvested deer suspended from a pole across their shoulders. Before ATVs and modern hunting equipment, getting a deer out of the Northwoods could itself be a serious piece of work.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://www.wisconsinhistory.org/",
+    "location": "Donald, Taylor County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Three Deer Rode Into Madison Strapped to a Station Wagon",
+    "year": "1959",
+    "category": "Hunting & Outdoors",
+    "lat": 43.0731,
+    "lng": -89.4012,
+    "locationAccuracy": "Madison",
+    "summary": "In November 1959, Danny Sands and Dick Goldfield were photographed beside a wood-sided station wagon carrying three harvested deer. Two were strapped across the hood and another rode on the roof with its antlers prominently displayed—a scene from an era when returning from deer camp could make the vehicle itself part of the trophy display.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://www.wisconsinhistory.org/record/image/W01244J",
+    "location": "Madison, Dane County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "A 1949 Deer Hunt Was Photographed on Madeline Island",
+    "year": "1949",
+    "category": "Hunting & Outdoors",
+    "lat": 46.7833,
+    "lng": -90.7667,
+    "locationAccuracy": "Madeline Island; exact hunting location unknown",
+    "summary": "In 1949, three hunters were photographed in a clearing on Madeline Island with two harvested deer lying in front of them. One man held a rifle and another a shotgun, preserving a glimpse of deer hunting on Wisconsin's largest Lake Superior island.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://legacy.wisconsinhistory.org/Records?facets=CATEGORIES%3A%22Wisconsin+Historical+Images%22%2CFacetSubject%3A%22outdoor+photography%22%2CFacetSubject%3A%22hats%22%2CCONTENT_TYPE%3A%22Photograph%22%2CFacetSubject%3A%22deer+hunting%22",
+    "location": "Madeline Island, Ashland County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Five Chippewa Falls Hunters Came Back With Seven Deer",
+    "year": "1947",
+    "category": "Hunting & Outdoors",
+    "lat": 44.9369,
+    "lng": -91.3929,
+    "locationAccuracy": "Chippewa Falls area; exact hunting camp location unknown",
+    "summary": "In 1947, five Chippewa Falls deer hunters posed with their rifles in front of a buck pole holding seven harvested deer. A small animal, possibly a rabbit, also hung from the pole beside a log building—an unmistakable snapshot of postwar Wisconsin deer-camp culture.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://legacy.wisconsinhistory.org/Records?facets=CATEGORIES%3A%22Wisconsin+Historical+Images%22%2CCommunity%3A%22Chippewa+Falls%22%2CFacetSubject%3A%22botany%22",
+    "location": "Chippewa Falls, Chippewa County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Three Deer, a Car and a Very Curious Cat",
+    "year": "1948",
+    "category": "Hunting & Outdoors",
+    "lat": 44.15,
+    "lng": -90.15,
+    "locationAccuracy": "New Miner area; photograph identified as George Sterbens Farm",
+    "summary": "Around 1948, four men and a woman posed around a car near New Miner with three harvested deer stretched across its hood. But the strangest detail may be at the front of the car: a cat stood with its paws against the vehicle, staring up at the deer. John E. Limbach's photograph preserved the wonderfully odd scene.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://www.wisconsinhistory.org/record/image/W012BM0",
+    "location": "New Miner, Juneau County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Eight Hunters Displayed Six Deer at Wisconsin's Slovenian Settlement",
+    "year": "1912",
+    "category": "Hunting & Outdoors",
+    "lat": 44.735,
+    "lng": -90.73,
+    "locationAccuracy": "Willard community",
+    "summary": "In 1912, eight hunters gathered for a photograph at the Slovenian settlement at Willard in Clark County. Six harvested deer hung behind the group while the hunters posed with their guns, preserving a glimpse of how immigrant communities carried Wisconsin's growing deer-camp tradition into the Northwoods.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://legacy.wisconsinhistory.org/Records?facets=CATEGORIES%3A%22Wisconsin+Historical+Images%22%2CFOR_SALE%3A%221%22%2CFacetSubject%3A%22outdoor+photography%22%2CFacetSubject%3A%22portraits%2C+group%22%2CFacetYear%3A%5B1900+TO+1999%5D%2CFacetSubject%3A%22deer+hunting%22",
+    "location": "Willard, Clark County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "Hunters Once Brought Their Deer Home by Railroad",
+    "year": "Early 1900s",
+    "category": "Hunting & Outdoors",
+    "lat": 45.66,
+    "lng": -89.65,
+    "locationAccuracy": "Harshaw railroad station area",
+    "summary": "Before pickups and ATVs became part of deer camp, the railroad was one way Wisconsin hunters reached the Northwoods and brought their harvest home. A surviving photograph from Harshaw shows a group of hunters standing with their guns and harvested deer on the railroad platform.",
+    "source": "Wisconsin Historical Society",
+    "sourceUrl": "https://legacy.wisconsinhistory.org/Records?facets=CATEGORIES%3A%22Wisconsin+Historical+Images%22%2CFORMAT_NUMBER_ORG%3A%22CF+9287%22",
+    "location": "Harshaw, Oneida County, Wisconsin",
+    "markerType": "outdoors"
+  },
+  {
+    "title": "The Schooner Lucerne Sank With Iron Ore Near Long Island",
+    "year": "1886",
+    "category": "Shipwreck",
+    "lat": 46.72315,
+    "lng": -90.76725,
+    "locationAccuracy": "approximate wreck site",
+    "summary": "The 195-foot schooner Lucerne sank near Long Island in 1886. Its upright hull and iron-ore cargo remain visible on the lakebed.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "location": "Long Island, Lake Superior",
+    "markerType": "water"
+  },
+  {
+    "title": "Fire Sent the Schooner Barge Noquebay to the Bottom",
+    "year": "1905",
+    "category": "Shipwreck",
+    "lat": 46.92613,
+    "lng": -90.54528,
+    "locationAccuracy": "approximate wreck site",
+    "summary": "The 205-foot schooner barge Noquebay burned and sank at Julian Bay. Sections of its wooden hull, boiler and wheel survive underwater.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "location": "Julian Bay, Stockton Island",
+    "markerType": "water"
+  },
+  {
+    "title": "The Sevona Broke Apart on Sand Island Shoals",
+    "year": "1905",
+    "category": "Shipwreck",
+    "lat": 47.00683,
+    "lng": -90.90867,
+    "locationAccuracy": "approximate wreck site",
+    "summary": "The bulk freighter Sevona struck a shoal during a September 1905 storm. Seven crew members drowned and pieces of its steel hull remain on the bottom.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "location": "Sand Island shoals, Lake Superior",
+    "markerType": "water"
+  },
+  {
+    "title": "The Pretoria Foundered Near Outer Island",
+    "year": "1905",
+    "category": "Shipwreck",
+    "lat": 47.08933,
+    "lng": -90.39433,
+    "locationAccuracy": "approximate wreck site",
+    "summary": "The large schooner barge Pretoria sank during the same September 1905 storm that wrecked the Sevona. Five people died.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "location": "Northeast of Outer Island, Lake Superior",
+    "markerType": "water"
+  },
+  {
+    "title": "Michigan Island Lit Its First Lighthouse in 1857",
+    "year": "1857",
+    "category": "Maritime History",
+    "lat": 46.874,
+    "lng": -90.498,
+    "locationAccuracy": "approximate landmark",
+    "summary": "Michigan Island’s first lighthouse entered service in 1857, was abandoned the following year and was relit in 1869.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "location": "Michigan Island",
+    "markerType": "water"
+  },
+  {
+    "title": "The Old La Pointe Lighthouse Guided Ships From Long Island",
+    "year": "1858",
+    "category": "Maritime History",
+    "lat": 46.728,
+    "lng": -90.782,
+    "locationAccuracy": "approximate landmark",
+    "summary": "Built in 1858, the Old La Pointe Lighthouse on Long Island served Lake Superior shipping until 1897. Its foundation ruins remain.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "location": "Long Island",
+    "markerType": "water"
+  },
+  {
+    "title": "Raspberry Island Lighthouse First Shone in 1863",
+    "year": "1863",
+    "category": "Maritime History",
+    "lat": 46.97,
+    "lng": -90.806,
+    "locationAccuracy": "approximate landmark",
+    "summary": "Raspberry Island Lighthouse began operating in 1863. Its building was enlarged in 1906 and the light was automated in 1947.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "location": "Raspberry Island",
+    "markerType": "water"
+  },
+  {
+    "title": "Outer Island Lighthouse Began Watching Lake Superior",
+    "year": "1874",
+    "category": "Maritime History",
+    "lat": 47.073,
+    "lng": -90.414,
+    "locationAccuracy": "approximate landmark",
+    "summary": "Outer Island Lighthouse was built in 1874 to help mariners navigate the Apostle Islands and was automated in 1961.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "location": "Outer Island",
+    "markerType": "water"
+  },
+  {
+    "title": "Sand Island Lighthouse Was Built in 1881",
+    "year": "1881",
+    "category": "Maritime History",
+    "lat": 46.984,
+    "lng": -90.938,
+    "locationAccuracy": "approximate landmark",
+    "summary": "Sand Island Lighthouse was built in 1881. Its light was automated in 1921, and the beacon returned to the historic building in 1985.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "location": "Sand Island",
+    "markerType": "water"
+  },
+  {
+    "title": "Devils Island Lighthouse Entered Service in 1901",
+    "year": "1901",
+    "category": "Maritime History",
+    "lat": 47.08,
+    "lng": -90.727,
+    "locationAccuracy": "approximate landmark",
+    "summary": "A temporary tower appeared in 1891; the permanent Devils Island tower was built in 1898 and entered service in 1901.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/learn/historyculture/lighthouses.htm",
+    "location": "Devils Island",
+    "markerType": "water"
+  },
+  {
+    "title": "Basswood Island Still Has Submerged Quarry Docks",
+    "year": "1890s",
+    "category": "Maritime History",
+    "lat": 46.831,
+    "lng": -90.756,
+    "locationAccuracy": "approximate landmark",
+    "summary": "Submerged dock cribs off Basswood Island are remnants of sandstone quarry operations active in the 1890s.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "location": "Southeast Basswood Island",
+    "markerType": "water"
+  },
+  {
+    "title": "Stockton Island Has a Historic Dock Beneath the Water",
+    "year": "1890s",
+    "category": "Maritime History",
+    "lat": 46.9083,
+    "lng": -90.6236,
+    "locationAccuracy": "approximate landmark",
+    "summary": "Underwater dock cribs near Stockton Island’s southwest shore preserve evidence of historic Apostle Islands quarry shipping.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "location": "Southwest Stockton Island",
+    "markerType": "water"
+  },
+  {
+    "title": "Hermit Island Hides an Old Quarry Dock Underwater",
+    "year": "1890s",
+    "category": "Maritime History",
+    "lat": 46.876,
+    "lng": -90.679,
+    "locationAccuracy": "approximate landmark",
+    "summary": "Submerged dock cribs off Hermit Island mark the maritime infrastructure of the islands’ sandstone quarry era.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/planyourvisit/diving.htm",
+    "location": "South Hermit Island",
+    "markerType": "water"
+  },
+  {
+    "title": "Devils Island Waves Carved Sandstone Sea Caves",
+    "year": "Geologic",
+    "category": "Geology",
+    "lat": 47.081,
+    "lng": -90.73,
+    "locationAccuracy": "approximate landmark",
+    "summary": "Waves, freezing and thawing carved arches and chambers into the thinly bedded sandstone at Devils Island.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/learn/nature/caves.htm",
+    "location": "Devils Island",
+    "markerType": "water"
+  },
+  {
+    "title": "Sand Island Has Sea Caves at Swallow Point",
+    "year": "Geologic",
+    "category": "Geology",
+    "lat": 46.99,
+    "lng": -90.925,
+    "locationAccuracy": "approximate landmark",
+    "summary": "Swallow Point’s sandstone shoreline holds sea caves shaped by Lake Superior waves and seasonal freeze-thaw cycles.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/learn/nature/caves.htm",
+    "location": "Swallow Point, Sand Island",
+    "markerType": "water"
+  },
+  {
+    "title": "Mainland Sea Caves Reveal Ancient Lake Superior Sandstone",
+    "year": "Geologic",
+    "category": "Geology",
+    "lat": 46.95,
+    "lng": -90.9,
+    "locationAccuracy": "approximate landmark",
+    "summary": "The mainland sea caves near Mawikwe Bay expose sandstone sculpted into arches, pillars and chambers by the lake.",
+    "source": "National Park Service",
+    "sourceUrl": "https://www.nps.gov/apis/learn/nature/caves.htm",
+    "location": "Mawikwe Bay, Bayfield Peninsula",
+    "markerType": "water"
+  },
+  {
+    "title": "Lake Superior Has a 400-Mile Wisconsin Water Trail",
+    "year": "Modern",
+    "category": "Water Trail",
+    "lat": 46.72,
+    "lng": -91.65,
+    "locationAccuracy": "regional representative point",
+    "summary": "Wisconsin’s Lake Superior Water Trail spans more than 400 miles of shoreline, linking paddling access, coastal communities and wild shoreline.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/parks/watertrails/lakesuperior",
+    "location": "Wisconsin Lake Superior shoreline",
+    "markerType": "water"
+  },
+  {
+    "title": "Wisconsin’s Lake Michigan Water Trail Runs 523 Miles",
+    "year": "Modern",
+    "category": "Water Trail",
+    "lat": 44.1,
+    "lng": -87.65,
+    "locationAccuracy": "regional representative point",
+    "summary": "Wisconsin’s designated Lake Michigan Water Trail follows 523 miles of coastline and connects access points across eleven lakeside counties.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/parks/watertrails/lakemichigan",
+    "location": "Wisconsin Lake Michigan shoreline",
+    "markerType": "water"
+  },
+  {
+    "title": "The St. Louis River Estuary Opens Wisconsin’s Superior Shore",
+    "year": "Geologic",
+    "category": "Wetlands",
+    "lat": 46.72,
+    "lng": -92.11,
+    "locationAccuracy": "approximate area",
+    "summary": "The St. Louis River estuary forms the western end of Wisconsin’s Lake Superior Water Trail, combining extensive wetlands with the busy Duluth–Superior harbor.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/parks/watertrails/lakesuperior",
+    "location": "Superior, Wisconsin",
+    "markerType": "water"
+  },
+  {
+    "title": "The Kakagon and Bad River Sloughs Form a Vast Coastal Wetland",
+    "year": "Modern",
+    "category": "Wetlands",
+    "lat": 46.64,
+    "lng": -90.7,
+    "locationAccuracy": "approximate area",
+    "summary": "The Kakagon–Bad River Sloughs are a major Lake Superior coastal wetland within the Bad River Reservation, along Wisconsin’s northern water trail.",
+    "source": "Wisconsin DNR",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/parks/watertrails/lakesuperior",
+    "location": "Bad River Reservation, Lake Superior",
+    "markerType": "water"
+  },
+  {
+    "title": "A Sand Island Lighthouse Keeper Rescued the Prussia Crew",
+    "year": "1885",
+    "category": "Maritime Rescue",
+    "lat": 46.984,
+    "lng": -90.938,
+    "locationAccuracy": "approximate",
+    "summary": "In 1885, Sand Island lighthouse keeper Charles Lederle spotted the burning steamer Prussia, rowed several miles into Lake Superior and rescued its entire crew.",
+    "source": "National Park Service — Sand Island Light",
+    "sourceUrl": "https://www.nps.gov/apis/learn/historyculture/sand-light.htm",
+    "location": "Sand Island, Apostle Islands",
+    "markerType": "water"
+  },
+  {
+    "title": "The Pretoria Survivors Were Pulled Ashore by a Lighthouse Keeper",
+    "year": "1905",
+    "category": "Maritime Rescue",
+    "lat": 47.073,
+    "lng": -90.414,
+    "locationAccuracy": "approximate",
+    "summary": "After the schooner-barge Pretoria sank in a September storm, Outer Island lighthouse keeper John Irvine rescued five surviving crew members from the surf. Five others died.",
+    "source": "National Park Service — People and Places: A Human History of the Apostle Islands",
+    "sourceUrl": "https://www.nps.gov/apis/learn/historyculture/upload/People-and-Places-A-Human-History-of-the-Apostle-Islands-508-_reduced.pdf",
+    "location": "Outer Island, Apostle Islands",
+    "markerType": "water"
+  },
+  {
+    "title": "Bark Bay Slough Hides a Lagoon Behind a Sand Spit",
+    "year": "Geologic",
+    "category": "Wetlands",
+    "lat": 46.88,
+    "lng": -91.16,
+    "locationAccuracy": "approximate",
+    "summary": "A roughly two-mile sand spit separates Lake Superior from Bark Bay Slough’s lagoon, coastal fen and bog, creating habitat for rare plants.",
+    "source": "Wisconsin DNR — Bark Bay Slough",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/statenaturalareas/BarkBaySlough",
+    "location": "Bark Bay, Bayfield County",
+    "markerType": "water"
+  },
+  {
+    "title": "The Bad River Sloughs Hold Great Lakes Wild Rice Beds",
+    "year": "Modern",
+    "category": "Wetlands",
+    "lat": 46.64,
+    "lng": -90.7,
+    "locationAccuracy": "approximate",
+    "summary": "The Kakagon and Bad River Sloughs contain the largest natural wild rice bed on the Great Lakes and are recognized as wetlands of international importance.",
+    "source": "Wisconsin DNR — Ramsar Wetlands",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/lands/RamsarWetlands",
+    "location": "Bad River Reservation, Ashland County",
+    "markerType": "water"
+  },
+  {
+    "title": "Chequamegon Bay Supports a Diverse Cold-Water Fishery",
+    "year": "Modern",
+    "category": "Fishing",
+    "lat": 46.63,
+    "lng": -90.86,
+    "locationAccuracy": "approximate",
+    "summary": "The waters around Chequamegon Bay support seasonal fishing for walleye, northern pike, smallmouth bass, perch, trout and salmon.",
+    "source": "Wisconsin DNR — Fishing Calendar for Lake Superior",
+    "sourceUrl": "https://dnr.wisconsin.gov/topic/Fishing/lakesuperior/fishingcalendar.html",
+    "location": "Chequamegon Bay, Ashland County",
+    "markerType": "water"
+  }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
